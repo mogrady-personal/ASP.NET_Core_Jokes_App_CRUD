@@ -2,7 +2,7 @@
 
 Simple Application on Localhost to Store and Display Jokes with Authentication.
 
-<img src="https://github.com/mogrady-git/student-manager-2.0/blob/master/demo-student-manager.gif" width="100%"/>
+<img src="https://github.com/mogrady-professional/ASP.NET_Core_Jokes_App_CRUD/blob/master/JokesApp/Capture.PNG" width="100%"/>
 
 ## How to use
 
