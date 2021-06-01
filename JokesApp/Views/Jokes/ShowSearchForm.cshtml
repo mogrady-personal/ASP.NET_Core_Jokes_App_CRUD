@@ -1,0 +1,36 @@
+﻿@*Data Entry Form*@
+
+<h4>Search for a Joke</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @*Need to create ShowSearchResults in the Models folder*@
+        <form asp-action="ShowSearchResults">
+            @*
+                Validation not needed either!
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
+            <div class="text-danger"></div>
+            <div class="form-group">
+                @*<label asp-for="JokeAnswer" class="control-label"></label>*@
+                <label for="SearchPhrase" class="control-label"></label>
+                <input name="SearchPhrase" class="form-control" />
+                @*
+            Validation not needed either!
+            <span asp-validation-for="JokeAnswer" class="text-danger"></span>*@
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@*
+    Aspect to ensure you type in the Joke in the correct format.. not needed anymore.
+    @section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}*@
